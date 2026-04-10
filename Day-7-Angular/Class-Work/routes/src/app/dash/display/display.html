@@ -1,0 +1,8 @@
+<p>display works!</p>
+<div class="cards-container">
+  <mat-card *ngFor="let item of userService.userData" class="user-card">
+    <img [src]="item.imgurl" alt="{{item.name}}" class="user-image">
+    <p>Name: {{item.name}}</p>
+    <p>Role: {{item.role}}</p>
+  </mat-card>
+</div>

@@ -1,0 +1,13 @@
+section{
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+    border: 3px red;
+}
+section>div:first-child{
+    width: 20%;
+    height: 100%;
+    border: 2px dashed;
+    display: flex;
+    flex-direction: column;
+}

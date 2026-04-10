@@ -1,0 +1,10 @@
+nav{
+    display: flex;
+    gap: 20px;
+    height: 70px;
+    background: linear-gradient(90deg, #159827, #d46232);
+}
+.active{
+    color: white;
+    border: 10px;
+}

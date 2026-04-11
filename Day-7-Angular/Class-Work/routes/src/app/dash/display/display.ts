@@ -5,7 +5,7 @@ import { User } from '../../services/user';
 
 @Component({
   selector: 'app-display',
-  imports: [CommonModule, JsonPipe, MatCardModule],
+  imports: [CommonModule, MatCardModule],
   templateUrl: './display.html',
   styleUrl: './display.css',
 })

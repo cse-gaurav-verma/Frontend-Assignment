@@ -1,0 +1,76 @@
+<!-- <p>first-comp works!</p>
+<h1>Component</h1>
+<h1 [style]="style" [hidden]="isHidden">{{name}}</h1>
+
+<button (click)="click()">Click ME</button>
+
+<div class="names-container">
+  <button (click)="prev()" class="nav-button">Prev</button>
+  <h2 class="current-name">{{currentName}}</h2>
+  <button (click)="next()" class="nav-button">Next</button>
+</div>
+
+
+<h1>{{ipval}}</h1>
+<input type="text" [(ngModel)] = "ipval">
+ -->
+
+<!-- <app-childcomp (data)="handleData($event)"></app-childcomp>
+<h1>{{d}}</h1> -->
+<!-- <h1 [ngClass]="{classA :applyclass, classB : !applyclass}">NGCLass</h1>
+
+<h1 *ngIf="applyclass">Ng true</h1>
+<h1 *ngIf="!applyclass">Ng falase</h1>
+@if (applyclass){
+  <h1>condition is true</h1>
+}@else{
+  <h1>condition is false</h1>
+}
+<button (click)="shouldApply()">Click to change class</button> -->
+
+<!-- <ul>
+  @for (item of arr; track item) {
+    <li>{{item}}</li>
+  }@empty {
+    <h1>nothing to display</h1>
+  }
+</ul>
+<ol>
+  <li *ngFor="let ele of arr">{{ele}}</li>
+</ol> -->
+
+<table style="border: solid black;">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (user of users; track user.id) {
+      <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+      </tr>
+    } @empty {
+      <tr>
+        <td colspan="2">No users found.</td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+<table style="border: solid black;">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+    </tr>
+  </tbody>
+</table>
